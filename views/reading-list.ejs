@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading List</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Inconsolata", monospace;
+            background-color: #130e0e;
+            margin: 0;
+            padding: 20px;
+            color: #ffffff;
+        }
+        h1, h2 {
+            text-align: left;
+        }
+        nav {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .bookmark-list {
+            margin-top: 20px;
+        }
+        .bookmark-item {
+            margin: 10px 0;
+        }
+    </style>
+    <script src="https://unpkg.com/htmx.org"></script>
+</head>
+<body>
+    <h1>Reading List</h1>
+
+    <nav>
+        <a href="/">[home]</a>
+        <a href="/projects">[projects]</a>
+        <!-- <a href="/blogs">[blogs]</a> -->
+    </nav>
+
+    <section>
+        
+        <div class="bookmark-list" id="bookmarks">
+            <h3>📚 Research Papers</h3>
+            <div class="bookmark-item">
+                <strong>Neural Turing Machines</strong> [<a href="https://arxiv.org/abs/1410.5401" target="_blank" style="color: #007bff;">link</a>]
+            </div>
+            <div class="bookmark-item">
+                <strong>First Law of ComplexoDynamics</strong> [<a href="https://arxiv.org/abs/1902.10504" target="_blank" style="color: #007bff;">link</a>]
+            </div>
+            <div class="bookmark-item">
+                <strong>Generative Adversarial Nets</strong> [<a href="https://arxiv.org/abs/1406.2661" target="_blank" style="color: #007bff;">link</a>]
+            </div>
+            <div class="bookmark-item">
+                <strong>Image-to-Image Translation with Conditional Adversarial Networks</strong> [<a href="https://arxiv.org/abs/1611.07004" target="_blank" style="color: #007bff;">link</a>]
+            </div>
+            <div class="bookmark-item">
+                <strong>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</strong> [<a href="https://arxiv.org/abs/1810.04805" target="_blank" style="color: #007bff;">link</a>]
+            </div>
+        </div>
+    </section>
+</body>
+</html>
