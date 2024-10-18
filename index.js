@@ -12,9 +12,17 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 const jwtSecret = 'your_secret_key';
 
+// Log when starting the database connection
+console.log('Connecting to the database...');
+
 const pool = new Pool({
     connectionString: process.env.DATABASE_URI,
 });
+
+// Log to confirm connection to the database
+pool.connect()
+    .then(() => console.log('Database connected successfully.'))
+    .catch(err => console.error('Error connecting to the database:', err));
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
