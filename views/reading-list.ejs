@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reading List</title>
+    <title>;]</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -36,6 +36,21 @@
         }
         .bookmark-item {
             margin: 10px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #555; /* Line between items */
+        }
+        .bookmark-item:last-child {
+            border-bottom: none; /* Remove line for last item */
+        }
+        .bookmark-item strong {
+            color: #007bff; /* Make titles blue */
+        }
+        .bookmark-item a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .bookmark-item a:hover {
+            text-decoration: underline;
         }
     </style>
     <script src="https://unpkg.com/htmx.org"></script>
@@ -44,29 +59,28 @@
     <h1>Reading List</h1>
 
     <nav>
-        <a href="/">[home]</a>
-        <a href="/projects">[projects]</a>
-        <!-- <a href="/blogs">[blogs]</a> -->
+        <a href="/">[Home]</a>
+        <!-- <a href="/projects">[Projects]</a> -->
+        <!-- <a href="/blogs">[Blogs]</a> -->
     </nav>
 
     <section>
-        
         <div class="bookmark-list" id="bookmarks">
             <h3>📚 Research Papers</h3>
             <div class="bookmark-item">
-                <strong>Neural Turing Machines</strong> [<a href="https://arxiv.org/abs/1410.5401" target="_blank" style="color: #007bff;">link</a>]
+                <strong><a href="https://arxiv.org/abs/1410.5401" target="_blank">Neural Turing Machines</a></strong>
             </div>
             <div class="bookmark-item">
-                <strong>First Law of ComplexoDynamics</strong> [<a href="https://arxiv.org/abs/1902.10504" target="_blank" style="color: #007bff;">link</a>]
+                <strong><a href="https://arxiv.org/abs/1902.10504" target="_blank">First Law of ComplexoDynamics</a></strong>
             </div>
             <div class="bookmark-item">
-                <strong>Generative Adversarial Nets</strong> [<a href="https://arxiv.org/abs/1406.2661" target="_blank" style="color: #007bff;">link</a>]
+                <strong><a href="https://arxiv.org/abs/1406.2661" target="_blank">Generative Adversarial Nets</a></strong>
             </div>
             <div class="bookmark-item">
-                <strong>Image-to-Image Translation with Conditional Adversarial Networks</strong> [<a href="https://arxiv.org/abs/1611.07004" target="_blank" style="color: #007bff;">link</a>]
+                <strong><a href="https://arxiv.org/abs/1611.07004" target="_blank">Image-to-Image Translation with Conditional Adversarial Networks</a></strong>
             </div>
             <div class="bookmark-item">
-                <strong>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</strong> [<a href="https://arxiv.org/abs/1810.04805" target="_blank" style="color: #007bff;">link</a>]
+                <strong><a href="https://arxiv.org/abs/1810.04805" target="_blank">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</a></strong>
             </div>
         </div>
     </section>

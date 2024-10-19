@@ -20,13 +20,18 @@
         }
         .container {
             display: flex;
-            flex-direction: column; /* Changed to column to make the content stack vertically */
+            flex-direction: column;
             margin-top: 20px;
-            width: 100%; /* Set to 100% to allow it to use the full width */
+            width: 100%;
         }
         h2 {
             font-size: 1.5em;
             margin-top: 20px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #555;
+            margin: 30px 0;
         }
         nav {
             text-align: left;
@@ -47,22 +52,41 @@
         }
         .section {
             margin-top: 30px;
-            width: 100%; /* Set to 100% for full width */
+            width: 100%;
         }
-        .skills-list {
+        .skills-list, .contact-list {
             list-style-type: none;
             padding: 0;
+            text-align: left;
         }
-        .skills-list li {
+        .skills-list li, .contact-list li {
             margin: 5px 0;
+        }
+        .section-content {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .projects-list a {
+            color: #009688;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 5px;
+        }
+        .projects-list a:hover {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
     <nav>
         <a href="/readinglist">📚 [Reading List]</a>
-        <a href="/projects">🛠️ [Projects]</a>
-        <a href="/blogs">📝 [Blogs]</a>
+        <!-- <a href="/projects">🛠️ [Projects]</a> -->
     </nav>
 
     <h2>👋 Hello, I'm Ali</h2>
@@ -71,27 +95,37 @@
         <p class="intro-text">I'm a pre-final year student passionate about building intelligent systems and exploring cutting-edge tech. I love crafting machine learning solutions, dabbling in LLMs 🤖 and diffusion models 🎨, and diving into software development 💻. Always eager to learn, create, and push the boundaries of what's possible!</p>
     </div>
 
+    <hr>
     <div class="section">
-        <h2>💡 Skills</h2>
-        <ul class="skills-list">
-            <li>🔍 Machine Learning</li>
-            <li>🌐 Web Development</li>
-        </ul>
+        <h2>💡 Projects</h2>
+        <div class="projects-list">
+            <a href="https://github.com/alirashidAR/Prism-GenAI" target="_blank">structor.io</a> |
+            <a href="https://github.com/alirashidAR/colloquium.ai" target="_blank">colloquium.ai</a> |
+            <a href="https://github.com/alirashidAR/ml-dl" target="_blank">ml-dl</a> |
+            <a href="https://github.com/alirashidAR/Generative-Minds">Generative Minds</a>
+        </div>
     </div>
 
+    <div class="section">
+        <h2>Research Papers</h2>
+        <p>- Currently working on two: one on Computer Vision and another on Game Theory and ML.</p>
+    </div>
+
+    <hr>
     <div class="section">
         <h2>🔍 Interests</h2>
-        <p>Currently deep diving into LLMs 🤖 and diffusion models 🎨, while also enjoying café hopping ☕.</p>
+        <p class="section-content">Currently deep diving into LLMs 🤖 and diffusion models 🎨, while also enjoying café hopping ☕.</p>
     </div>
 
+    <hr>
     <div class="section">
         <h2>📫 Contact Me</h2>
-        <p>If you'd like to connect or collaborate, feel free to reach out!</p>
-        <ul>
-            <li>Email: <a href="mailto:alirashid.b38@gmail.com" style="color: #007bff;">alirashid.b38@gmail.com</a></li>
-            <li>LinkedIn: <a href="www.linkedin.com/in/ali-rashid-in" target="_blank" style="color: #007bff;">www.linkedin.com/in/ali-rashid-in</a></li>
-            <li>GitHub: <a href="https://github.com/alirashidAR" target="_blank" style="color: #007bff;">https://github.com/alirashidAR</a></li>
-            <li>LeetCode: <a href="https://leetcode.com/u/ali-Rashid/" target="_blank" style="color: #007bff;">https://leetcode.com/u/ali-Rashid/</a></li>
+        <p class="section-content">If you'd like to connect or collaborate, feel free to reach out!</p>
+        <ul class="contact-list">
+            <li>Email: <a href="mailto:alirashid.b38@gmail.com">alirashid.b38@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/ali-rashid-in" target="_blank">www.linkedin.com/in/ali-rashid-in</a></li>
+            <li>GitHub: <a href="https://github.com/alirashidAR" target="_blank">github.com/alirashidAR</a></li>
+            <li>LeetCode: <a href="https://leetcode.com/u/ali-Rashid/" target="_blank">leetcode.com/u/ali-Rashid</a></li>
         </ul>
     </div>
 </body>
